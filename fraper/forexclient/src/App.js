@@ -56,17 +56,19 @@ const App = () => {
 
     return (
         <div className='vb'>
-            <h1>Forex Rate Tracker</h1>
-            <input type='text'
-                placeholder="Currency Pair"
+            <h1>Forex Rate Tracker</h1><label for cur>Currency Pair</label>
+            <input type='text' id='cur'
+                placeholder="Enter the Currency Pair like USD/INR"
                 onChange={(e) => setCurrencyPair(e.target.value)}
             />
+            <label for st>Start Date</label>
             <input
-                type="date"
+                type="date" id='st'
                 onChange={(e) => setStartDate(e.target.value)}
             />
+            <label for en>End Date</label>
             <input
-                type="date"
+                type="date" id='en'
                 onChange={(e) => setEndDate(e.target.value)}
             />
             <button onClick={getAverageRate}>Get Average Rate</button>
