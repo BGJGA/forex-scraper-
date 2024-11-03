@@ -51,9 +51,10 @@ input[type="text"], input[type="date"] {
   width: 50%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+ border-width: 2px;
   margin-top: 20px;
   border-radius: 30px;
+  margin-bottom: 20px;
 }
 
 /* Button styles */
